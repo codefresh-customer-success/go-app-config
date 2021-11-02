@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: helm-example
-          image: franciscocodefresh/go-app:argocd-pipeline-47df7
+          image: franciscocodefresh/go-app:argocd-pipeline-tester-6
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
