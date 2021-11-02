@@ -5,7 +5,6 @@ metadata:
   labels:
     app.kubernetes.io/instance: go-app
     app.kubernetes.io/name: helm-example
-
 spec:
   replicas: 1
   selector:
@@ -20,7 +19,7 @@ spec:
     spec:
       containers:
         - name: helm-example
-          image: franciscocodefresh/helm-go-example:latest
+          image: franciscocodefresh/go-app:argocd-pipeline-tester-2
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
@@ -34,6 +33,4 @@ spec:
             httpGet:
               path: /
               port: 8080
-          resources:
-            {}
-            
+          resources: {}
